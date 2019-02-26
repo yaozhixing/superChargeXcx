@@ -1,0 +1,6 @@
+<!--pages/scancode/network.wxml-->
+<view>
+  <text>网络</text>
+  <button id="0" type="primary" bindtap="scanCodeFn">我要扫一扫</button>
+  <view>{{scanresult}}</view>
+</view>

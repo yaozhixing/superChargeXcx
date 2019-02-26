@@ -1,0 +1,4 @@
+<view>
+	<button id="0" type="primary" bindtap="loginFn">小程序登录</button>
+
+</view>

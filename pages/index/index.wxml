@@ -1,14 +1,12 @@
 <!--index.wxml-->
 <view class="container">
-  <navigator url='../map/map'>充电宝地图</navigator> 
-  <!--<view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>-->
+  <view bindtap='indexrequest'>1、请求接口。request</view>
+  <view bindtap='indexuploadfail'>2、上传图片。uploadFile</view>
+  <view>3、选择图片。chooseImage</view>
+  <view bindtap='indexgetloction'>4、位置。getLocation</view>
+  <view bindtap='indexnetwork'>5、网络。getNetworkType</view>
+  <view>6、联系人。addPhoneContact</view>
+  <view bindtap='indexscancode'>7、扫码。scanCode</view>
+  <view>8、wifi。connectWifi</view>
+  <view bindtap='indextoast'>9、消息框</view>
 </view>

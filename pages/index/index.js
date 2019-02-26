@@ -15,6 +15,41 @@ Page({
       url: '../logs/logs'
     })
   },
+  indexrequest(){
+    wx.navigateTo({
+      url: '../request/request'
+    })
+  },
+  /* 上传图片 */
+  indexuploadfail(){
+    wx.navigateTo({
+      url: '../uploadfile/uploadfile',
+    })
+  },
+  /* 定位 */
+  indexgetloction(){
+    wx.navigateTo({
+      url: '../getlocation/getlocation',
+    })
+  },
+  /* 扫一扫 */
+  indexscancode() {
+    wx.navigateTo({
+      url: '../scancode/scancode',
+    })
+  },
+  /* 获取网络 */
+  indexnetwork() {
+    wx.navigateTo({
+      url: '../network/network',
+    })
+  },
+  /* 消息框 */
+  indextoast() {
+    wx.navigateTo({
+      url: '../toast/toast',
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

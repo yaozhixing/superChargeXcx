@@ -1,0 +1,6 @@
+<!--pages/getlocation/getlocation.wxml-->
+<view>
+  <text>定位</text>
+  <button id="0" type="primary" bindtap="getLoctionFn">定位当前位置并打开内置地图</button>
+</view>
+

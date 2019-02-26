@@ -1,0 +1,6 @@
+<!--pages/scancode/scancode.wxml-->
+<view>
+  <text>扫一扫</text>
+  <button id="0" type="primary" bindtap="scanCodeFn">我要扫一扫</button>
+  <view>{{scanresult}}</view>
+</view>
