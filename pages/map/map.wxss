@@ -74,6 +74,7 @@ page,.mapWrapper{
   left:0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 12px
 }
 
@@ -81,4 +82,41 @@ page,.mapWrapper{
   flex: 1;
   display: flex;
   justify-content: center
+}
+
+.hCenterBtn{
+  width:70rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.headContent .hbtn{
+  height:60rpx;
+  line-height: 60rpx;
+  padding:0 30rpx;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+  color: #181818;
+  font-size: 14px;
+}
+.headContent .hbtn.curr{
+  color:#fff;
+  background: #47e962;
+}
+.hShopBtn{
+  width:70rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  background-color: green;
 }
