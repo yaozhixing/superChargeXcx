@@ -9,6 +9,30 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+
+  handler: function (e) {
+    console.log(e);
+  },
+
+  sq(){
+    wx.getSetting({
+      success: (res) => {
+        console.log(res);
+        //未授权，打开授权页面
+        if (res.authSetting['scope.userInfo'] == false || res.authSetting['scope.userLocation'] == false){
+          wx.openSetting({
+            success: (res) => {
+              console.log(res.authSetting)
+            }
+          })
+        }
+        else{
+          console.log("您已授权，不用再次授权！")
+        }
+      }
+    })
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
