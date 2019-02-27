@@ -16,7 +16,8 @@ page,.mapWrapper{
   left:0;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255,255,255,.8);
+  background: linear-gradient(transparent , #fff);
+  
 }
 
 .membernav{
@@ -119,4 +120,27 @@ page,.mapWrapper{
   margin-right: 20rpx;
   border-radius: 50%;
   background-color: green;
+}
+
+/*侧边*/
+.slidBar{
+  width:90rpx;
+  position: fixed;
+  top:160rpx;
+  right: 20rpx;
+}
+
+.slidBar .silbarPos{
+  width:90rpx;
+  height: 90rpx;
+}
+
+.markerIco{
+  width: 44rpx;
+  height:68rpx;
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left: -22rpx;
+  margin-top: -33rpx;
 }

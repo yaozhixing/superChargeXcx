@@ -1,5 +1,30 @@
 <!--index.wxml-->
 <view class="container">
+  <view class='headtop'>
+    <view class='htitle'>租借充电宝</view>
+    <view class='hmemberico'>会员中心</view>
+  </view>
+  <view>
+    <image src=''></image>
+  </view>
+  <view>
+    <text>限时免费一小时</text>
+    <text>自带三种充电插头</text>
+    <text>支持异地归还</text>
+    <text>芝麻分550分以上免押金租借</text>
+  </view>
+
+  <view>
+    <text>分时计费</text>
+    <text>前10分钟免费，每小时1元，每天15元封顶</text>
+  </view>
+
+  <view>
+    <button type="primary" bindtap="primary">租借</button>
+    <view>点击租借即同意《用户协议》</view>
+  </view>
+
+  
   <navigator url='../map/map'>充电宝地图</navigator> 
   <!--<view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
