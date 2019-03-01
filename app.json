@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/map/map",
-    "pages/payDeposit/payDeposit"
+    "pages/payDeposit/payDeposit",
+    "pages/borrowSuccess/borrowSuccess",
+    "pages/borrowFail/borrowFail"
   ],
   "window": {
     "backgroundTextStyle": "light",

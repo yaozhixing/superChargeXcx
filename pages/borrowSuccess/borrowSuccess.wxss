@@ -1,0 +1,11 @@
+/* pages/borrowSuccess/borrowSuccess.wxss */
+.butns{
+  display: flex;
+  justify-content: center;
+}
+.memberCenter{
+  margin: 0 40rpx;
+}
+.helps{
+  margin: 0 40rpx;
+}

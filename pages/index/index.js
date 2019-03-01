@@ -8,7 +8,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     isAuthor: false,
-    isLogin: false,
+    isLogin: false, //默认：没有账户  
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
@@ -26,6 +26,12 @@ Page({
 
       //微信登录，后台注册接口
       this.loginFn();
+      //登录后，直接跳转去付押金页面
+      if (!this.data.isLogin){
+        wx.navigateTo({
+          url: '../payDeposit/payDeposit'
+        })
+      }
     }
   },
 
@@ -52,7 +58,7 @@ Page({
             },
             success(res){
               console.log(res.data.code);
-              //0： 没账号，去注册  1：有账号
+              //0： 没账号，去注册 false  1：有账号 true
               _this.setData({
                 isLogin: res.data.code ? true : false
               })

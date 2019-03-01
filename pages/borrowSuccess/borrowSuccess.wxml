@@ -1,0 +1,20 @@
+<!--pages/borrowSuccess/borrowSuccess.wxml-->
+<view>
+  <view><icon type="success" size="30" />租借成功</view>
+  <view>
+    请在设备上取走您的充电宝，使用后请尽快归还充电宝。
+  </view>
+
+  <view>
+    <text>计费和押金规则</text>
+    <text>前10分钟免费，每小时1元，每天15元封顶</text>
+    <text>退还押金，请至“个人中心”操作</text>
+    <text>若您选择了押金自动退还，系统先扣除订单费用，再退还剩余押金。</text>
+    <text>充电宝超48小时未归还，自动扣除押金，充电宝无需归还</text>
+  </view>
+
+  <view class='butns'>
+    <button class='memberCenter' type="primary" bindtap='jumpMember'>个人中心</button>
+    <button class='helps' type="primary">帮助中心</button>
+  </view>
+</view>

@@ -1,4 +1,4 @@
-// pages/payDeposit/payDeposit.js
+// pages/borrowFail/borrowFail.js
 Page({
 
   /**
@@ -6,38 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  //支付押金
-  payDeposit(){
-    //加载
-    wx.showLoading({
-      title: '支付中...',
-    });
-    setTimeout(function () {
-      wx.hideLoading()
-    }, 2000)
-    //成功
-    setTimeout(function () {
-      wx.showToast({
-        title: '支付成功',
-        icon: 'success',
-        duration: 2000
-      })
-    }, 2000)
-    //唤起扫描二维码
-    /*setTimeout(function () {
-      wx.scanCode({
-        success(res){
-          console.log("扫码成功");
-        }
-      })
-    }, 4000)*/
-    setTimeout(function () {
-      wx.navigateTo({
-        url: '/pages/borrowSuccess/borrowSuccess'
-      })
-    }, 4000)
   },
 
   /**

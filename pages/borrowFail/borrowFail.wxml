@@ -1,0 +1,11 @@
+<!--pages/borrowFail/borrowFail.wxml-->
+<view>
+  <view><icon type="warn" size="30" /></view>
+  <text>
+  非常抱歉，充电宝弹出失败，您可重新扫描二维码进行租借。
+  </text>
+  <view class='butns'>
+    <button class='memberCenter' type="primary">重新扫码</button>
+    <button class='helps' type="primary">个人中心</button>
+  </view>
+</view>
