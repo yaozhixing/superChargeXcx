@@ -14,6 +14,9 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const baseApi = "https://www.easy-mock.com/mock/5c7755477163345f2e2eccbd/xcx/";
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  baseApi: baseApi
 }

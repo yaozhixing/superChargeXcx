@@ -1,3 +1,5 @@
+const app = getApp()
+
 // 引入SDK核心类
 var QQMapWX = require('../../utils/qqmap-wx-jssdk.min.js');
 
@@ -117,6 +119,7 @@ Page({
   },
 
   onShow: function(){
+    console.log(app.globalData.userInfo);
     this.mapCtx = wx.createMapContext('myMap');
     //this.getLocatPosition();
     //this.getCenterLocation();

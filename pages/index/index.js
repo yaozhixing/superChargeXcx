@@ -1,4 +1,5 @@
 //index.js
+import { baseApi } from "../../utils/util"
 //获取应用实例
 const app = getApp()
 
@@ -6,16 +7,78 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
-    hasUserInfo: false,
+    isAuthor: false,
+    isLogin: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
-  handler: function (e) {
+  //微信弹窗授权成功
+  Handler(e) {
     console.log(e);
+    //已授权
+    if (e.detail.errMsg == "getUserInfo:ok"){
+      let u = JSON.parse(e.detail.rawData);
+      this.setData({
+        isAuthor: true
+      })
+      this.data.userInfo = u;
+      app.globalData.userInfo = u;
+
+      //微信登录，后台注册接口
+      this.loginFn();
+    }
+  },
+
+  //微信登录
+  loginFn(){
+    let _this = this;
+    //有账号
+    if (this.data.isLogin){
+      //console.log("去付押金")
+      wx.navigateTo({
+        url: '../payDeposit/payDeposit'
+      })
+    }
+    //无账号
+    else{
+      wx.login({
+        success(res){
+          console.log(res);
+          let code = res.code;
+          wx.request({
+            url: `${baseApi}getOppenId`, // 仅为示例，并非真实的接口地址
+            data: {
+              code: code
+            },
+            success(res){
+              console.log(res.data.code);
+              //0： 没账号，去注册  1：有账号
+              _this.setData({
+                isLogin: res.data.code ? true : false
+              })
+            }
+          })
+        }
+      })
+    }
   },
 
   sq(){
     wx.getSetting({
+      success(res) {
+        if (!res.authSetting['scope.userInfo']) {
+          wx.authorize({
+            scope: 'scope.userInfo',
+            success() {
+              // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+              wx.startRecord()
+            }
+          })
+        }
+      }
+    })
+
+    /*wx.getSetting({
       success: (res) => {
         console.log(res);
         //未授权，打开授权页面
@@ -30,49 +93,11 @@ Page({
           console.log("您已授权，不用再次授权！")
         }
       }
-    })
+    })*/
   },
 
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+    this.loginFn();
   }
 })

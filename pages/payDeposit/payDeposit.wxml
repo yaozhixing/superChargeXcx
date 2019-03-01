@@ -1,0 +1,24 @@
+<!--pages/payDeposit/payDeposit.wxml-->
+<view>
+  <view>支付押金</view>
+  <block>租借充电宝，需先充值押金</block>
+  <text>押金：99元</text>
+
+  <view>
+    <text>押金退还流程</text>
+    <text>订单完成后，可在“个人中心”，申请押金退还。</text>
+    <text>押金原路返还，预计0-3个工作日到账。</text>
+  </view>
+
+  <view>
+    <text>押金自动退还</text>
+    <text>充电宝归还并支付完成后，押金将自动原路返还。</text>
+  </view>
+
+  <button type="primary" bindtap='payDeposit'>支付</button>
+
+  <view>
+    点击支付即同意《充值协议》
+  </view>
+
+</view>

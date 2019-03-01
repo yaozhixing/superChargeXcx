@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/payDeposit/payDeposit"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -20,7 +20,7 @@
   </view>
 
   <view>
-    <button type="primary"  bindtap='sq'>租借</button>
+    <button type="primary"  open-type="getUserInfo" bindgetuserinfo="Handler">租借</button>
     <view>点击租借即同意《用户协议》</view>
   </view>
 
