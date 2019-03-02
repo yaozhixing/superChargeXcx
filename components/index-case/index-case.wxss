@@ -1,0 +1,5 @@
+/* components/index-case/index-case.wxss */
+.ind-scrollcase{
+  padding: 0 0 0 30rpx;
+  height: 1.76rem;
+}

@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "瑞思通",
+  "usingComponents": {
+    "index-focus": "/components/index-focus/index-focus",
+    "index-nav": "/components/index-nav/index-nav",
+    "index-case": "/components/index-case/index-case"
+  }
 }

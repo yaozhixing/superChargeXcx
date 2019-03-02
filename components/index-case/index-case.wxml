@@ -1,0 +1,14 @@
+<!--components/index-case/index-case.wxml-->
+<view class='ind-scrollcase'>
+  <navigator url="">
+		<image class="casetitle" src="/assets/images/index/casetitle.png"></image>
+		<view class="case-main">
+			<view id="js-indcase">
+				123123
+			</view>
+		</view>
+		<view href="case.html" class="casearrow-right">
+      <image class="casearrow" src="/assets/images/index/case-rarrow.png"></image>
+    </view>
+	</navigator>
+</view>

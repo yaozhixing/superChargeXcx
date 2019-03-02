@@ -1,0 +1,9 @@
+<!--components/index-nav/index-nav.wxml-->
+<view class='ind-disnav'>
+		<view class="i-navbox" wx:for="{{navLists}}" wx:key="{{index}}">
+			<navigator class='navbox-a' url="{{item.url}}">
+				<image class='img' src="{{item.img}}"></image>
+				<view class="title">{{item.title}}</view>
+			</navigator>
+		</view>
+</view>

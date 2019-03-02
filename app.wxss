@@ -1,6 +1,12 @@
 /**app.wxss**/
+page{
+  font-size: 30rpx;
+}
 .container {
-  font-size: 14px;
   height: 100%;
   box-sizing: border-box;
 } 
+image{
+  width:40rpx;
+  height: 40rpx;
+}

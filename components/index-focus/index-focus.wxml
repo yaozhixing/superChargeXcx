@@ -1,0 +1,15 @@
+<!--components/index-focus/index-focus.wxml-->
+<view class="indexFocus">
+  <swiper class="indexSwiper"
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

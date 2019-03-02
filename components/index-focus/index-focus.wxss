@@ -1,0 +1,11 @@
+/* components/index-focus/index-focus.wxss */
+.indexFocus{
+  width:100%;
+}
+.indexSwiper{
+  height: 360rpx;
+}
+.slide-image{
+  width:100%;
+  height: 360rpx;
+}
