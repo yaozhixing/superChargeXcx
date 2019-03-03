@@ -1,0 +1,48 @@
+/* components/index-news/index-news.wxss */
+.loan-raiders{
+  background-color: #fff;
+}
+.cbox-tit{
+  height: 92rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+.tit-name{
+    font-size: 32rpx;
+    line-height: 92rpx;
+    padding-left: 38rpx;
+    color: #333;
+    font-weight: bold;
+}
+.tit-more{
+  display: block;
+  height: 92rpx;
+  line-height: 92rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+.tit-more image{
+  width:33rpx;
+  height: 32rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  vertical-align: sub;
+}
+.ind-raiders-nav{
+  width: 100%;
+  margin: 20rpx 0;
+  padding-left: 40rpx;
+  overflow: hidden;
+  height: 36rpx;
+}
+.rainav{
+  display: inline;
+  margin-right: 48rpx;
+  font-size: 26rpx;
+  padding-bottom: 24rpx;
+  border-bottom: 1px solid #fff;
+}
+.rainav navigator{
+  color: #666
+}

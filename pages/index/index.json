@@ -3,6 +3,8 @@
   "usingComponents": {
     "index-focus": "/components/index-focus/index-focus",
     "index-nav": "/components/index-nav/index-nav",
-    "index-case": "/components/index-case/index-case"
+    "index-case": "/components/index-case/index-case",
+    "index-product": "/components/index-product/index-product",
+    "index-news": "/components/index-news/index-news"
   }
 }

@@ -1,0 +1,84 @@
+/* components/index-product/index-product.wxss */
+.hotloan-wrap{
+  margin-top: 20rpx;
+  padding-top: 20rpx;
+  background-color: #fff
+}
+.cbox-tit{
+  height: 92rpx;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+.tit-name{
+    font-size: 32rpx;
+    line-height: 92rpx;
+    padding-left: 38rpx;
+    color: #333;
+    font-weight: bold;
+}
+
+.hloan-a{
+  padding: 42rpx 0 42rpx 0;
+  display: flex;
+}
+.hloan-left{
+  width: 40%;
+  text-align: center;
+  border-right: 1px solid #e5e5e5
+}
+.money{
+  margin-top: 18rpx;
+  font-size: 62rpx;
+  color: #f95458;
+}
+.moneydes{
+  margin-top: 20rpx;
+  color: #999;
+  font-size: 26rpx
+}
+.hloan-right{
+  margin-left: 60rpx;
+}
+.hloan-r-h2{
+  margin-top: 14rpx;
+}
+.tit{
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.tit-tip{
+  height: 27rpx;
+  line-height: 27rpx;
+  text-align: center;
+  display: inline-block;
+  padding: 0 10rpx 0 10rpx;
+  margin-right: 10rpx;
+  font-size: 22rpx;
+  border-radius: 5rpx;
+}
+.tit-tipblue{
+  border: 1px solid #4a9bd6;
+  color: #4a9bd6;
+}
+.tit-tipgreen{
+  border: 1px solid #75bf71;
+  color: #75bf71;
+}
+.hloan-pdes{
+  margin-bottom: 14rpx;
+  color: #515151;
+  font-size: 26rpx
+}
+.hloan-pdes1{
+  margin-top: 28rpx;
+}
+.red{
+  color:#f95458
+}
+.hotloan-ad{
+  padding: 0 40rpx;
+}
+.hotloan-ad image{
+  width:100%;
+  height: 191rpx
+}

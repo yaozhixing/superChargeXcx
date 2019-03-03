@@ -1,0 +1,49 @@
+<!--components/index-product/index-product.wxml-->
+<view class='contbox hotloan-wrap'>
+  <view class='cbox-tit'>
+    <view class='tit-name'>热门贷款推荐</view>
+  </view>
+  <view class="js-hotloan-list">
+    <view class="hloan-box hloan-box1">
+			<navigator class='hloan-a' href="#">
+				<view class="hloan-left">
+					<view class="money">50万</view>
+					<view class="moneydes">最高额度(元)</view>
+				</view>
+				<view class="hloan-right">
+					<view class="hloan-r-h2">
+            <text class="tit">保单贷</text>
+            <text class="tit-tip tit-tipblue">低利息</text>
+            <text class="tit-tip tit-tipgreen">无抵押</text>
+          </view>
+					<view class="hloan-pdes hloan-pdes1">月利息<text class='red'>0.85%～0.93%</text></view>
+					<view class="hloan-pdes hloan-pdes2">最快<text class='red'>2小时</text>放款</view>
+				</view>
+			</navigator>
+		</view>
+
+    <view class="hloan-box hloan-box1">
+			<navigator class='hloan-a' href="#">
+				<view class="hloan-left">
+					<view class="money">50万</view>
+					<view class="moneydes">最高额度(元)</view>
+				</view>
+				<view class="hloan-right">
+					<view class="hloan-r-h2">
+            <text class="tit">公积金贷</text>
+            <text class="tit-tip tit-tipblue">低利息</text>
+            <text class="tit-tip tit-tipgreen">无抵押</text>
+          </view>
+					<view class="hloan-pdes hloan-pdes1">月利息<text class='red'>0.60%</text></view>
+					<view class="hloan-pdes hloan-pdes2">最快<text class='red'>30分钟</text>放款</view>
+				</view>
+			</navigator>
+		</view>
+
+  </view>
+  <view class="hotloan-ad">
+		<navigator href="#">
+    <image class="casearrow" src="/assets/images/index/hotloan-ad.png"></image>
+    </navigator>
+	</view>
+</view>

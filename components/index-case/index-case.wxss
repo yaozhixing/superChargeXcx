@@ -1,5 +1,40 @@
 /* components/index-case/index-case.wxss */
 .ind-scrollcase{
+  margin-top: 20rpx;
   padding: 0 0 0 30rpx;
-  height: 1.76rem;
+  height: 88rpx;
+  background-color: #fff
 }
+.scrollcase-con{
+  height: 88rpx;
+  display: flex;
+  overflow: hidden
+}
+.item{
+  width:100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+.casetitle{
+  width: 237rpx;
+  margin-top: 20rpx;
+}
+.case-main{
+  margin-left: 60rpx;
+  height: 88rpx;
+  overflow: hidden;
+  flex: 1;
+}
+.casearrow-right{
+  height: 88rpx;
+  width: 88rpx;
+}
+.casearrow{
+  width: 33rpx;
+  height: 32rpx;
+  display: block;
+  margin: 28rpx auto 0;
+}
+

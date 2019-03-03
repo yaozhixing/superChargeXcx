@@ -1,11 +1,11 @@
 <!--components/index-case/index-case.wxml-->
 <view class='ind-scrollcase'>
-  <navigator url="">
+  <navigator class='scrollcase-con' url="">
 		<image class="casetitle" src="/assets/images/index/casetitle.png"></image>
 		<view class="case-main">
-			<view id="js-indcase">
-				123123
-			</view>
+        <view class='item'>
+          得设究果直传品社离府而阶石复求国分北油来论委能据海科
+        </view>
 		</view>
 		<view href="case.html" class="casearrow-right">
       <image class="casearrow" src="/assets/images/index/case-rarrow.png"></image>
