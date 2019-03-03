@@ -37,12 +37,59 @@
   height: 36rpx;
 }
 .rainav{
-  display: inline;
+  display: inline-block;
   margin-right: 48rpx;
   font-size: 26rpx;
   padding-bottom: 24rpx;
   border-bottom: 1px solid #fff;
+  position: relative
 }
-.rainav navigator{
+navigator{
   color: #666
 }
+.curr{
+  color:#f95458;
+}
+.rai-box{
+  
+}
+.rai-box-a{
+	padding: 32rpx 40rpx;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #e5e5e5;
+}
+.rai-text{
+  margin-right: 36rpx;
+  flex: 1;
+}
+.tait-tit{
+	height: 92rpx;
+	line-height: 42rpx;
+	font-size: 30rpx;
+	overflow: hidden;
+}
+.tait-other{
+	font-size: 24rpx;
+	color: #999;
+	margin-top: 8rpx;
+}
+.looknumber{
+	margin-left: 30rpx;
+}
+.rai-ad{
+	width: 230rpx;
+  height: 130rpx;
+  overflow: hidden;
+}
+.rai-ad image{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+

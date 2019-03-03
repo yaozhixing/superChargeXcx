@@ -6,22 +6,40 @@
 	</view>
 	<view class="ind-raiders-nav" id="retr">
   
-				<view class="rainav curr js-rainav" data-type="1"><a href="javascript:void(0)">无抵押贷</a></view>
-				<view class="rainav js-rainav" data-type="2"><a href="javascript:void(0)">经营贷款</a></view>
-				<view class="rainav js-rainav" data-type="3"><a href="javascript:void(0)">抵押贷款</a></view>
-				<view class="rainav js-rainav" data-type="4"><a href="javascript:void(0)">个人贷款</a></view>
+				<navigator class="rainav curr js-rainav" data-type="1">无抵押贷</navigator>
+				<navigator class="rainav js-rainav" data-type="2">经营贷款</navigator>
+				<navigator class="rainav js-rainav" data-type="3">抵押贷款</navigator>
+				<navigator class="rainav js-rainav" data-type="4">个人贷款</navigator>
 				
 	</view>
 	<view class="ind-raiders-main">
-    <view>
-				<navigator href="#">
+    <view class='rai-box'>
+				<navigator href="#" class="rai-box-a">
 					<view class="rai-text">
 						<view class="tait-tit">了解信用卡分期贷款的注意事项</view>
 						<view class="tait-other"><text class="date">2018-06-08</text><text class="looknumber">1000万阅读</text></view>
 					</view>
-					<view class="rai-ad"><image src="../public/wap/images/ad/rea-ad.png"></image></view>
+					<view class="rai-ad"><image src="/assets/images/ad/rea-ad.png"></image></view>
 				</navigator>
-			</view>
+		</view>
+		<view class='rai-box'>
+				<navigator href="#" class="rai-box-a">
+					<view class="rai-text">
+						<view class="tait-tit">了解信用卡分期贷款的注意事项</view>
+						<view class="tait-other"><text class="date">2018-06-08</text><text class="looknumber">1000万阅读</text></view>
+					</view>
+					<view class="rai-ad"><image src="/assets/images/ad/rea-ad.png"></image></view>
+				</navigator>
+		</view>
+		<view class='rai-box'>
+				<navigator href="#" class="rai-box-a">
+					<view class="rai-text">
+						<view class="tait-tit">了解信用卡分期贷款的注意事项</view>
+						<view class="tait-other"><text class="date">2018-06-08</text><text class="looknumber">1000万阅读</text></view>
+					</view>
+					<view class="rai-ad"><image src="/assets/images/ad/rea-ad.png"></image></view>
+				</navigator>
+		</view>
 	</view>
   <view>
 	<navigator href="strategy.html" class="raimain-more">全部贷款攻略<image src="../public/wap/images/index/case-rarrow.png"></image></navigator>
